@@ -39,6 +39,8 @@
 \usepackage{graphicx} % Required for including images
 \graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
 
+\usepackage{subcaption} % This package offers an user interface to typeset sub-captions and sub-figures.
+
 \setlength{\parindent}{0pt} % Paragraph indentation
 \setlength{\parskip}{10pt} % Vertical space between paragraphs
 

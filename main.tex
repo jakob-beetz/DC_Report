@@ -318,6 +318,25 @@ This statement automatically references the figure below using its label: Figure
 
 %------------------------------------------------
 
+\begin{figure}[H] % Creating Figure with multiple sub-figures.
+	\begin{subfigure}{0.4\textwidth} % In this case 0.4\textwidth, that is, 40% of the width of the text in the document.
+		\includegraphics[width=\textwidth]{Images/placeholder.jpg}
+		\caption{First subfigure.}
+		\label{fig:first} % Label for referencing this sub-figure in the text automatically
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.4\textwidth}
+		\includegraphics[width=\textwidth]{Images/placeholder.jpg}
+		\caption{Second subfigure.}
+		\label{fig:second} % Label for referencing this sub-figure in the text automatically
+	\end{subfigure}
+	\hfill
+	\caption{Creating subfigures in \LaTeX.}
+	\label{figures} % Label for referencing these figures in the text automatically
+\end{figure}	
+
+%------------------------------------------------
+
 \begin{figure*} % Use the figure* environment for full width figures
 	\includegraphics[width=\linewidth]{ARR.pdf}
 	\caption{Full width figure caption.}
